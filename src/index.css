@@ -1,13 +1,109 @@
+/* 💙 Sky Blue → Deep Blue 그라데이션 */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Segoe UI", "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  background: linear-gradient(180deg, #a0d8ff 0%, #4f9dff 50%, #1c6dd0 100%);
+  color: #033b73;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* main 레이아웃 기본 */
+main {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 폼 */
+form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+input,
+button,
+select {
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: 0.2s;
+}
+
+input {
+  flex: 1;
+  min-width: 200px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+button {
+  background-color: #ffffff;
+  color: #1c6dd0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #1c6dd0;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* 라디오 그룹 */
+label {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* 카드 */
+section.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 5일 예보 카드 */
+article {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+article:hover {
+  transform: translateY(-4px);
+  transition: 0.2s;
+}
+
+/* 링크 */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
